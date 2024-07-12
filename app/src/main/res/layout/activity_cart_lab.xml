@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/l"
+    tools:context=".CartLabActivity">
+
+
+    <Button
+        android:id="@+id/buttonCartDate"
+        android:layout_width="194dp"
+        android:layout_height="64dp"
+        android:background="#00781212"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#0C43E8"
+        android:text="22/10/2020"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCartBack"
+        app:layout_constraintEnd_toStartOf="@+id/buttonCartTime"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+
+    <TextView
+        android:id="@+id/textViewCartTitle"
+        android:layout_width="200dp"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:text="Lab test cart itrms"
+        android:textColor="#F1F1F1"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCartPackageName"
+        android:layout_width="238dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Deliver location :PUNE"
+        android:textColor="#0C43E8"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCartTitle" />
+
+    <ListView
+        android:id="@+id/listViewCart"
+        android:layout_width="304dp"
+        android:layout_height="233dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCartPackageName" />
+
+    <TextView
+        android:id="@+id/textViewCartTotalPrice"
+        android:layout_width="217dp"
+        android:layout_height="53dp"
+        android:gravity="center"
+        android:text="Total Cost : 2000"
+        android:textColor="#0C43E8"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewCart"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <Button
+        android:id="@+id/buttonCartTime"
+        android:layout_width="178dp"
+        android:layout_height="65dp"
+        android:background="#00781212"
+        android:textColor="#0C43E8"
+        android:text="10:00"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCartCheckout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonCartDate"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="130dp"
+        android:layout_height="29dp"
+        android:gravity="center"
+        android:text="Select deliver date"
+        android:textColor="#0C43E8"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCartDate"
+        app:layout_constraintEnd_toStartOf="@+id/textView11"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCartTotalPrice"
+        app:layout_constraintVertical_bias="0.523" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="130dp"
+        android:layout_height="29dp"
+        android:gravity="center"
+        android:text="Select deliver time"
+        android:textColor="#0C43E8"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCartTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCartTotalPrice"
+        app:layout_constraintVertical_bias="0.313" />
+
+    <Button
+        android:id="@+id/buttonCartBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:backgroundTint="#0C43E8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonCartCheckout"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCartDate"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/buttonCartCheckout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Checkout"
+        android:backgroundTint="#0C43E8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonCartBack"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCartTime"
+        app:layout_constraintVertical_bias="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>
